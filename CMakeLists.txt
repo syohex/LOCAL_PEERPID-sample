@@ -1,0 +1,9 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8.11)
+CMAKE_POLICY(SET CMP0003 NEW)
+
+PROJECT(local_peerpid_sample)
+
+SET(CMAKE_C_FLAGS "-std=gnu99 -Wall -O2")
+
+ADD_EXECUTABLE(server server.c)
+ADD_EXECUTABLE(client client.c)
